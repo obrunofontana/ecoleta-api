@@ -7,12 +7,16 @@ module.exports = {
       host : '127.0.0.1',
       user : 'root',
       password : 'root',
-      database : 'ecoleta_db'
+      database : 'ecoleta'
     },
     migrations: {
       directory: __dirname + '/src/database/migrations',
       tableName: 'knex_migrations'
     },
+    seeds: {
+      directory: __dirname + '/src/database/seeds',
+      tableName: 'knex_seeds'
+    }    
   },
 
   staging: {

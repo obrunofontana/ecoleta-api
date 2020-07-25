@@ -1,6 +1,13 @@
-import knex from 'knex'
-import configuration from '../../knexfile';
+import knex from 'knex';
 
-const connection = knex(configuration.development);
+const connection = knex({
+  client: 'mysql',
+  connection: {
+    host : '127.0.0.1',
+    user : 'root',
+    password : 'root',
+    database : 'ecoleta'
+  },
+});
 
 export default connection;

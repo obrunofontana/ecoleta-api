@@ -3,16 +3,21 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "dev": "npx ts-node-dev src/server.ts"
+    "dev": "npx ts-node-dev --ignore-watch node_modules src/server.ts",
+    "up": "npx knex migrate:up",
+    "down": "npx knex migrate:down",
+    "seed": "npx knex seed:run"
   },
   "author": "Bruno Fontana <obrunofontana@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "knex": "^0.21.2",
     "mysql": "^2.18.1"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.6",
     "@types/express": "^4.17.7",
     "ts-node": "^8.10.2",
     "ts-node-dev": "^1.0.0-pre.56",
