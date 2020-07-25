@@ -1,0 +1,7 @@
+{
+  "name": "ecoleta-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Bruno Fontana <obrunofontana@gmail.com>",
+  "license": "MIT"
+}
