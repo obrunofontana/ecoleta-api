@@ -11,7 +11,7 @@ class ItemsCollectController {
         return {
           id: item.id,
           title: item.title,
-          imageUrl: `http://localhost:3001/uploads/${item.image}`
+          imageUrl: `http://192.168.2.101:3001/uploads/${item.image}`
         };
       });
   

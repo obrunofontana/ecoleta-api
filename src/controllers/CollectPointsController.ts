@@ -36,9 +36,7 @@ class CollectPointsController {
         .where('itemsonpoints.collectPointId', id)
         .select('itemscollect.title');
 
-      point.items = items;
-
-      return res.status(200).json(point);
+      return res.status(200).json({ point, items });
     } catch (e) {
       return res.status(500).json({ error: e});
     } 
